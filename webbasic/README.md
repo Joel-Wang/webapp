@@ -3,13 +3,17 @@ webbasic文件夹下程序及文件说明
 	本文件夹的基本内容如下，基本分为小结5点
 
 1)tcpbasic.py为基本网页访问获取信息功能
+
 2)tcpsever.py为服务器程序，
 tcpclient.py为客户端程序
-先运行sever，再运行client，可能windows下多线程会出错，这可能跟系统的某些设置有关系，不过只要能建立单一线程，程序的功能基本就算实现了
+先运行sever，再运行client，可能windows下多线程会出错，这可能跟系统的某些设置有关系，不过只要能建立单一线程，程序的功能基本就算实现了。
+
 3)hello.html为编写简单网页，点击变成红色
+
 4)wsgihello.py为使用wsgi编写的wsgi处理函数，在其中定义application
 wsgisever.py为对应的服务器的程序，在其中importwsgihello,并调用application
 启动sever然后按照要求访问，运行后浏览器输入http://localhost:8000/看结果
+
 5）使用web框架flask编写web app
 pip安装flask，anaconda可以忽略不计
 
