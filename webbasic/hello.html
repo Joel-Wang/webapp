@@ -1,0 +1,27 @@
+<!--这是html注释的标准格式-->
+<!--这是一个html网页的简单编写-->
+<!--HTML文档就是一系列的Tag组成，最外层的Tag是<html>。规范的HTML也包含<head>...</head>和<body>...</body>（注意,这与HTTP的Header、Body不同，不能混淆-->
+
+
+<!--更多细节于以下网站查找http://www.w3school.com.cn/-->
+
+<html>
+<head>
+	<title>Hello</title>
+	<style>
+	h1{
+		color:#333333;
+		font-size:48px;
+		text-shadow:3px 3px 3px #666666;
+	}
+	</style>
+	<script>
+		function change(){
+			document.getElementsByTagName('h1')[0].style.color='#ff0000';
+		}
+	</script>
+</head>
+<body>
+	<h1 onclick="change()">Hello,world!</h1>
+</body>
+</html>
